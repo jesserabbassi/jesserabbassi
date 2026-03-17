@@ -264,15 +264,25 @@
         }
 
         .about-image {
-            aspect-ratio: 4/5;
+            aspect-ratio: 1;
             background: var(--bg-surface);
             border-radius: 24px;
             position: relative;
             border: 1px solid var(--border-color);
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: right;
             overflow: hidden;
+        }
+        
+
+        /* Ensure the profile image fills the box and maintains aspect ratio */
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
         }
 
         .about-image::before {
@@ -287,6 +297,7 @@
             inset: 0;
             border-radius: 24px;
             box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+            
         }
 
         .about-text p {
@@ -395,6 +406,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -413,9 +425,9 @@
 /* Updated Image rules for the slideshow */
 .project-visual img {
     position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
     width: 100%;
+    
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -704,7 +716,8 @@
      </h2>
     </div>
     <div class="about-grid">
-     <div class="about-image">
+     <div class="about-image"> 
+        <img src="Screenshots/my_img.jpg" alt="Profile photo of Jesser Abbassi">
      </div>
      <div class="about-text">
       <p>
@@ -931,11 +944,11 @@ Alongside game development, I also use Unity as a powerful tool to build program
     <div class="projects-grid">
      <div class="project-card">
       <div class="project-visual">
-       <img alt="" src="Screenshots\Capture d'écran 2026-02-21 133137.png"/>
-       <img alt="" src="Screenshots\Capture d'écran 2026-02-21 133042.png"/>
-       <img alt="" src="Screenshots\Capture d'écran 2026-02-21 133000.png"/>
-       <img alt="" src="Screenshots\Capture d'écran 2026-02-21 133221.png"/>
-       <img alt="" src="Screenshots\Capture d'écran 2026-02-21 133015.png"/>
+       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133137.png"/>
+       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133042.png"/>
+       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133000.png"/>
+       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133221.png"/>
+       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133015.png"/>
       </div>
       <div class="project-info">
        <h3 class="project-title">
@@ -1100,7 +1113,11 @@ Alongside game development, I also use Unity as a powerful tool to build program
      </div>
      <div class="project-card">
       <div class="project-visual">
-       <img alt="Flood Prediction Data Visualization" src="flood-prediction-image.jpg"/>
+       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20115930.png"/>
+       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20120032.png"/>
+       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20115828.png"/>
+       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20115851.png"/>
+       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20115912.png"/>
       </div>
       <div class="project-info">
        <h3 class="project-title">
