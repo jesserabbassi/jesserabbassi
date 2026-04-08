@@ -1,17 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="Jesser Abbassi - Software Engineering Student, Game Developer, and Full Stack Developer Portfolio" name="description"/>
+  <meta content="Jesser Abbassi - Software Engineer focused on backend systems, AI, and full-stack development portfolio" name="description"/>
   <meta content="Jesser Abbassi" name="author"/>
-  <meta content="Software Engineer, Unity Developer, AI Developer, Machine Learning, C, C++, Python, Tunisia" name="keywords"/>
-  <title>
-   Jesser Abbassi | Software Engineer &amp; Game Developer
-  </title>
+  <meta content="Software Engineering, Backend, API, AI, Machine Learning, C, C++, Python, ASP.NET, PostgreSQL" name="keywords"/>
+  <title>Jesser Abbassi | Software Engineer & Backend Systems</title>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
   <link href="favicon.ico" rel="icon"/>
   <style>
@@ -297,7 +295,6 @@
             inset: 0;
             border-radius: 24px;
             box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
-            
         }
 
         .about-text p {
@@ -398,46 +395,30 @@
         }
 
         .project-visual {
-    background: #1a1a1a;
-    min-height: 350px;
-    border-right: 1px solid var(--border-color);
-    position: relative; /* Added to constrain absolute children */
-    overflow: hidden; /* CRITICAL: Stops images from bleeding into the text area */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
+            background: #1a1a1a;
+            min-height: 350px;
+            border-right: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .project-visual img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: left center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
 
-/* Container rules stay exactly the same */
-.project-visual {
-    background: #1a1a1a;
-    min-height: 350px;
-    border-right: 1px solid var(--border-color);
-    position: relative; 
-    overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Updated Image rules for the slideshow */
-.project-visual img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: left center;
-    opacity: 0; /* Hide all images initially */
-    transition: opacity 1s ease-in-out; /* Smooth fade effect */
-}
-
-/* Only show the active image */
-.project-visual img.active {
-    opacity: 1;
-}
+        .project-visual img.active {
+            opacity: 1;
+        }
 
         .project-info {
             padding: 3rem 3rem 3rem 0;
@@ -681,16 +662,16 @@
    <div class="container">
     <div class="hero-content reveal active">
      <div class="hero-subtitle">
-      Software Engineer | AI &amp; Game Systems Developer
+      Software Engineer | AI & Backend Systems
      </div>
      <h1>
       Jesser Abbassi
      </h1>
      <p class="hero-tagline">
-      "I design intelligent systems, immersive games, and scalable software solutions."
+      Building scalable backend services, AI-powered systems, and full-stack applications for data-driven businesses.
      </p>
      <p class="hero-stack">
-      C | C++ | C# | Python | Unity | ML | Full Stack
+      C | C++ | Python | ASP.NET | React | PostgreSQL | Machine Learning
      </p>
      <div class="hero-btns">
       <a class="btn btn-primary" href="#projects">
@@ -721,45 +702,20 @@
     </div>
     <div class="about-grid">
      <div class="about-image"> 
-        <img src="Screenshots/my_img.jpg" alt="Profile photo of Jesser Abbassi">
+        <img src="Screenshots/my_img.jpg" alt="Professional portrait of Jesser Abbassi">
      </div>
      <div class="about-text">
       <p>
-       I am an Engineering cycle student specializing in
-       <span class="highlight">
-        Software Engineering
-       </span>
-       . My deep passion lies at the intersection of Artificial Intelligence, game development, and full-stack systems architecture.
+       I am an Engineering cycle student focused on software architecture, backend systems, and AI-driven applications. I thrive on designing scalable platforms, data pipelines, and robust API services.
       </p>
       <p>
-       Armed with a strong problem-solving mindset, I thrive on complex technical challenges. I possess the ability to envision, build, and scale complete systems—taking them from initial architectural blueprints all the way to seamless deployment.
+       My core strength lies in translating complex requirements into efficient backend logic, clean system design, and maintainable full-stack solutions. I prioritize performance, reliability, and real-world impact.
       </p>
       <p>
-       Whether I am optimizing backend logic, engineering AI predictive models, or scripting immersive gameplay mechanics, I am dedicated to writing clean, maintainable, and efficient code.
+       I also use Unity as a practical tool for building interactive systems and data visualization interfaces, especially when technical workflows benefit from a visual front-end or simulation layer.
       </p>
       <p>
-       I’m also a Unity Developer (C#) and I don’t work only on games.
-Alongside game development, I also use Unity as a powerful tool to build programs and interactive applications, even for projects that are not game-related.
-       <br/>
-       🔹 What I can help with:
-       <br/>
-       🔹 Unity game development (2D / 3D, gameplay systems, prototyping)
-       <br/>
-       🔹 Feature &amp; system integration inside Unity projects
-       <br/>
-       🔹 API integration and data visualization inside Unity
-       <br/>
-       🔹 Interactive programs &amp; tools built with Unity
-       <br/>
-       🔹 UI interfaces and interactive visuals for normal (non-game) projects
-       <br/>
-       🔹 Turning existing ideas or systems into visual, interactive Unity applications
-       <br/>
-       If you need a game, a visualization tool, an interactive app, or a Unity-based program, I can help design and integrate it properly.
-       <br/>
-       📩 Feel free to DM me if you’re interested or if you know someone who could use Unity for their project.
-       <br/>
-       Let’s build something useful and interactive 🚀🎮
+       Whether I am building APIs, designing database schemas, or integrating machine learning models, I deliver production-aware solutions that align with engineering best practices.
       </p>
      </div>
     </div>
@@ -775,36 +731,9 @@ Alongside game development, I also use Unity as a powerful tool to build program
     <div class="skills-grid">
      <div class="skill-card">
       <h3>
-       <i class="fa-solid fa-globe">
+       <i class="fa-solid fa-code">
        </i>
-       Web Development
-      </h3>
-      <ul class="skill-list">
-       <li>
-        HTML5 &amp; CSS3
-       </li>
-       <li>
-        JavaScript
-       </li>
-       <li>
-        PHP
-       </li>
-       <li>
-        MySQL
-       </li>
-       <li>
-        REST APIs
-       </li>
-       <li>
-        Database Design
-       </li>
-      </ul>
-     </div>
-     <div class="skill-card">
-      <h3>
-       <i class="fa-solid fa-terminal">
-       </i>
-       Programming
+       Programming Languages
       </h3>
       <ul class="skill-list">
        <li>
@@ -819,74 +748,8 @@ Alongside game development, I also use Unity as a powerful tool to build program
        <li>
         Python
        </li>
-      </ul>
-     </div>
-     <div class="skill-card">
-      <h3>
-       <i class="fa-solid fa-gamepad">
-       </i>
-       Game Development
-      </h3>
-      <ul class="skill-list">
        <li>
-        Unity Engine
-       </li>
-       <li>
-        Blender
-       </li>
-       <li>
-        AI (NavMesh, Patrol)
-       </li>
-       <li>
-        3D Interaction
-       </li>
-       <li>
-        3D Animation
-       </li>
-       <li>
-        Feature &amp; system integration
-       </li>
-       <li>
-        Gameplay Systems
-       </li>
-       <li>
-        Physics Handling
-       </li>
-       <li>
-        UI Systems
-       </li>
-       <li>
-        API integration
-       </li>
-       <li>
-        data visualization
-       </li>
-      </ul>
-     </div>
-     <div class="skill-card">
-      <h3>
-       <i class="fa-solid fa-brain">
-       </i>
-       AI &amp; Machine Learning
-      </h3>
-      <ul class="skill-list">
-       <li>
-        Python ML Stack
-       </li>
-       <li>
-        LightGBM
-       </li>
-       <li>
-        Feature Engineering
-       </li>
-       <li>
-        Model Evaluation
-       </li>
-       <li>
-        Predictive Modeling
-       </li>
-       <li>
-        App AI Integration
+        JavaScript
        </li>
       </ul>
      </div>
@@ -894,23 +757,71 @@ Alongside game development, I also use Unity as a powerful tool to build program
       <h3>
        <i class="fa-solid fa-server">
        </i>
-       CS Foundations
+       Backend & APIs
       </h3>
       <ul class="skill-list">
        <li>
-        Data Structures
+        ASP.NET Core
        </li>
        <li>
-        Algorithms
+        REST APIs
        </li>
        <li>
-        OOP
+        Microservices
        </li>
        <li>
-        Software Architecture
+        System architecture
        </li>
        <li>
-        Database Systems
+        API integration
+       </li>
+      </ul>
+     </div>
+     <div class="skill-card">
+      <h3>
+       <i class="fa-solid fa-database">
+       </i>
+       Databases
+      </h3>
+      <ul class="skill-list">
+       <li>
+        PostgreSQL
+       </li>
+       <li>
+        MySQL
+       </li>
+       <li>
+        SQL & data modeling
+       </li>
+       <li>
+        Performance tuning
+       </li>
+       <li>
+        Database design
+       </li>
+      </ul>
+     </div>
+     <div class="skill-card">
+      <h3>
+       <i class="fa-solid fa-brain">
+       </i>
+       Machine Learning
+      </h3>
+      <ul class="skill-list">
+       <li>
+        Python ML stack
+       </li>
+       <li>
+        LightGBM
+       </li>
+       <li>
+        XGBoost
+       </li>
+       <li>
+        CatBoost
+       </li>
+       <li>
+        Predictive modeling
        </li>
       </ul>
      </div>
@@ -918,20 +829,17 @@ Alongside game development, I also use Unity as a powerful tool to build program
       <h3>
        <i class="fa-solid fa-wrench">
        </i>
-       Tools &amp; Environments
+       Tools
       </h3>
       <ul class="skill-list">
        <li>
-        Git &amp; GitHub
+        Git & GitHub
        </li>
        <li>
         VS Code
        </li>
        <li>
-        MySQL
-       </li>
-       <li>
-        Unity Editor
+        Unity (interactive systems)
        </li>
       </ul>
      </div>
@@ -948,59 +856,68 @@ Alongside game development, I also use Unity as a powerful tool to build program
     <div class="projects-grid">
      <div class="project-card">
       <div class="project-visual">
-       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133137.png"/>
-       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133042.png"/>
-       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133000.png"/>
-       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133221.png"/>
-       <img alt="" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133015.png"/>
+       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115930.png"/>
+       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 120032.png"/>
+       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115828.png"/>
+       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115851.png"/>
+       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115912.png"/>
       </div>
       <div class="project-info">
        <h3 class="project-title">
-        Horror Game (Unity)
+        Flood Prediction ML Model
        </h3>
        <p class="project-desc">
-        A first-person psychological horror game focused on immersive gameplay and AI-driven enemy behavior.
+        An intelligent predictive system for flood forecasting that combines data engineering, feature selection, and scalable model evaluation.
        </p>
        <ul class="project-features">
         <li>
          <i class="fa-solid fa-check">
          </i>
-         AI patrol system &amp; NavMesh-based movement
+         Designed data pipelines for meteorological preprocessing
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Complex object interaction system
+         Built ensemble models with LightGBM and CatBoost
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Immersive sound design integration
+         Optimized model performance and validation workflows
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Physics-based gameplay elements
+         Delivered a production-aware forecasting solution
         </li>
        </ul>
        <div class="tags">
         <span class="tag">
-         Unity
+         Python
         </span>
         <span class="tag">
-         C#
+         Streamlit
         </span>
         <span class="tag">
-         Game Dev
+         LightGBM
+        </span>
+        <span class="tag">
+         CatBoost
+        </span>
+        <span class="tag">
+         Machine Learning
         </span>
        </div>
        <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://youtu.be/CiFc1FQX_bs?si=HYwE-1Ldb0Zu3Q7Y" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-youtube">
+        <a class="btn btn-outline" href="https://github.com/jesserabbassi/Flood_Prediction_Model" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
+         <i class="fa-brands fa-github">
          </i>
-         Watch Demo
+         View Code
         </a>
        </div>
+       <p class="project-note">
+        * Includes technical documentation for model architecture and evaluation.
+       </p>
       </div>
      </div>
      <div class="project-card">
@@ -1012,28 +929,28 @@ Alongside game development, I also use Unity as a powerful tool to build program
         Penalty Kick Predictor
        </h3>
        <p class="project-desc">
-        A machine learning model designed to predict penalty kick outcomes using feature engineering and predictive modeling techniques.
+        A predictive analytics system that classifies penalty kick outcomes using sports data, feature engineering, and ensemble modeling.
        </p>
        <ul class="project-features">
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Achieved 91% accuracy
+         Implemented advanced feature engineering pipelines
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Advanced feature engineering
+         Trained and tuned LightGBM and XGBoost models
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Model training, evaluation, and tuning
+         Measured performance with rigorous validation
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         System performance optimization
+         Built a practical system for predictive decision support
         </li>
        </ul>
        <div class="tags">
@@ -1045,6 +962,9 @@ Alongside game development, I also use Unity as a powerful tool to build program
         </span>
         <span class="tag">
          Machine Learning
+        </span>
+        <span class="tag">
+         Data Science
         </span>
        </div>
        <div style="margin-top: 1.5rem;">
@@ -1058,35 +978,35 @@ Alongside game development, I also use Unity as a powerful tool to build program
      </div>
      <div class="project-card">
       <div class="project-visual">
-       [ UI / 3D Render Placeholder ]
+       [ System Architecture Placeholder ]
       </div>
       <div class="project-info">
        <h3 class="project-title">
         ProjetGestionDeReservation
        </h3>
        <p class="project-desc">
-        A complete meeting room reservation management system. Built initially in C with advanced data management logic, later upgraded with Unity 3D visualization and Python AI integration for predictive intelligence.
+        A reservation management system combining a C backend, interactive 3D visualization, and Python-based AI modules for intelligent scheduling.
        </p>
        <ul class="project-features">
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Structured C backend &amp; scheduling system
+         Structured C backend and scheduling logic
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Unity 3D room visualization &amp; interactive UI
+         Unity-based visualization for room planning
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Python AI integration for system intelligence
+         Integrated predictive intelligence in Python
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Highly modular architecture
+         Designed a modular architecture for expandability
         </li>
        </ul>
        <div class="tags">
@@ -1111,238 +1031,75 @@ Alongside game development, I also use Unity as a powerful tool to build program
         </a>
        </div>
        <p class="project-note">
-        * See GitHub repository and README for detailed technical documentation.
+        * See GitHub repository and README for technical design details.
        </p>
       </div>
      </div>
      <div class="project-card">
       <div class="project-visual">
-       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20115930.png"/>
-       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20120032.png"/>
-       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20115828.png"/>
-       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20115851.png"/>
-       <img alt="Flood Prediction Data Visualization" src="Screenshots/FloodPredictionShots/Capture%20d%27%C3%A9cran%202026-03-17%20115912.png"/>
+       <img alt="Educational Dashboard Interface" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 232132.png"/>
+       <img alt="Educational Dashboard Interface" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 232105.png"/>
+       <img alt="Educational Dashboard Interface" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 231915.png"/>
       </div>
       <div class="project-info">
        <h3 class="project-title">
-        Flood Prediction ML Model
+        Educational System & Teacher Dashboard
        </h3>
        <p class="project-desc">
-        An intelligent predictive model built to analyze meteorological data and forecast flood occurrences with high accuracy.
+        A bilingual educational platform with a secure teacher dashboard, student progress tracking, and a full-stack backend powered by Supabase and PostgreSQL.
        </p>
        <ul class="project-features">
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Feature engineering &amp; predictive modeling
+         Responsive UI Toolkit interface with polished interactions
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Complex data analysis &amp; preprocessing
+         Secure login and registration via Supabase REST APIs
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Algorithm performance optimization
+         Teacher dashboard with reporting and analytics
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Full Arabic/English localization and privacy controls
         </li>
        </ul>
        <div class="tags">
         <span class="tag">
-         Python
+         Unity
         </span>
         <span class="tag">
-         Streamlit
+         C#
         </span>
         <span class="tag">
-         LightGBM
+         UI Toolkit
         </span>
         <span class="tag">
-         CatBoost
+         PostgreSQL
         </span>
         <span class="tag">
-         Deep Learning
+         Supabase
         </span>
         <span class="tag">
-         Machine Learning
+         REST APIs
         </span>
        </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://github.com/jesserabbassi/Flood_Prediction_Model" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
+       <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+        <a class="btn btn-outline" href="#" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
          <i class="fa-brands fa-github">
          </i>
-         View Code
+         GitHub Repo
         </a>
-       </div>
-       <p class="project-note">
-        * See GitHub repository and README for detailed technical documentation.
-       </p>
-      </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       [ VFX Demo Visuals ]
-      </div>
-      <div class="project-info">
-       <h3 class="project-title">
-        VFX Unity Demo
-       </h3>
-       <p class="project-desc">
-        A professional showcase of technical art and real-time visual effects created within the Unity Engine.
-       </p>
-       <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
+        <a class="btn btn-outline" href="#" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
+         <i class="fa-solid fa-play">
          </i>
-         Custom Shader Graph &amp; VFX Graph implementations
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Advanced particle system optimization
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         High-fidelity environmental and elemental effects
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Real-time lighting and post-processing integration
-        </li>
-       </ul>
-       <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         VFX Graph
-        </span>
-        <span class="tag">
-         Shader Graph
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://www.youtube.com/@jessergamer2587" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-youtube">
-         </i>
-         Watch Demo
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       <img src="Screenshots\SquidGame\Capture d'écran 2026-01-06 210005.png" alt="Squid Game Prototype">
-      </div>
-      <div class="project-info">
-       <h3 class="project-title">
-        Red Light Green Light (Squid Game Prototype)
-       </h3>
-       <p class="project-desc">
-        A Unity prototype inspired by the Squid Game Red Light / Green Light challenge, featuring player movement, state-based game logic, and an interactive UI.
-       </p>
-       <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Red Light / Green Light state machine
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Player movement &amp; win/lose detection
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Simple UI &amp; feedback system
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Built in Unity with C# scripting
-        </li>
-       </ul>
-       <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         Game Dev
-        </span>
-        <span class="tag">
-         Prototype
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://jessergamer.itch.io/squid-game-prototype" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-itch-io">
-         </i>
-         Play on itch.io
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       [ Monopoly Mobile Game ]
-      </div>
-      <div class="project-info">
-       <h3 class="project-title">
-        Monopoly Mobile Game
-       </h3>
-       <p class="project-desc">
-        A local multiplayer Monopoly-style game built in Unity for mobile devices, supporting pass-and-play sessions and shared device gameplay.
-       </p>
-       <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Local multiplayer (pass-and-play) support
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Smooth touch controls for mobile board play
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Full property economy: buying, trading, and rent
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Turn-based rounds with UI feedback & score tracking
-        </li>
-       </ul>
-       <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         Mobile
-        </span>
-        <span class="tag">
-         Local Multiplayer
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://jessergamer.itch.io" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-itch-io">
-         </i>
-         View on itch.io
+         Demo / Video
         </a>
        </div>
       </div>
@@ -1356,28 +1113,28 @@ Alongside game development, I also use Unity as a powerful tool to build program
         Unity Chatbot (API Integration)
        </h3>
        <p class="project-desc">
-        A Unity-based chatbot built with API integration for conversational experiences, featuring a clean chat UI, message history, and server-side response generation.
+        A conversation interface built in Unity that connects to backend APIs for dynamic response generation and user context management.
        </p>
        <ul class="project-features">
         <li>
          <i class="fa-solid fa-check">
          </i>
-         REST/API integration for dynamic responses
+         REST API integration for live text responses
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Interactive Unity chat UI with message history
+         Interactive chat UI with session history
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Configurable system prompts & user context
+         Configurable prompts and backend flexibility
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Modular design for backend swapping (OpenAI, local, etc.)
+         Modular architecture for OpenAI/local services
         </li>
        </ul>
        <div class="tags">
@@ -1405,42 +1162,39 @@ Alongside game development, I also use Unity as a powerful tool to build program
      </div>
      <div class="project-card">
       <div class="project-visual">
-       <img alt="Human Body Educational Game & Teacher Dashboard" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 232132.png"/>
-       <img alt="Human Body Educational Game & Teacher Dashboard" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 232105.png"/>
-       <img alt="Human Body Educational Game & Teacher Dashboard" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 231915.png"/>
+       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133137.png"/>
+       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133042.png"/>
+       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133000.png"/>
+       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133221.png"/>
+       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133015.png"/>
       </div>
       <div class="project-info">
        <h3 class="project-title">
-        Human Body Educational Game & Teacher Dashboard
+        AI-Driven Interactive Simulation
        </h3>
        <p class="project-desc">
-        An interactive bilingual educational game built in Unity, paired with a secure teacher dashboard that tracks student progress in real time.
+        A real-time simulation showcasing AI patrol logic, object interaction systems, and stateful environment coordination in an engineered interactive experience.
        </p>
        <ul class="project-features">
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Responsive UI Toolkit interface with DOTween animations and frosted glass styling
+         AI patrol system and NavMesh-driven movement
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Secure student login and registration via Supabase REST API with PostgreSQL
+         Complex object interaction and state logic
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Teacher Dashboard in C# with custom DataGrid for scores, time, penalties, and progress bars
+         Real-time system behavior and optimization
         </li>
         <li>
          <i class="fa-solid fa-check">
          </i>
-         Configured PostgreSQL relationships and Row Level Security policies for privacy
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Full Arabic/English localization with RTL Arabic rendering support
+         Designed to demonstrate interactive system flows
         </li>
        </ul>
        <div class="tags">
@@ -1451,34 +1205,185 @@ Alongside game development, I also use Unity as a powerful tool to build program
          C#
         </span>
         <span class="tag">
-         UI Toolkit
+         Simulation
         </span>
         <span class="tag">
-         PostgreSQL
-        </span>
-        <span class="tag">
-         Supabase
-        </span>
-        <span class="tag">
-         REST APIs
-        </span>
-        <span class="tag">
-         DOTween
-        </span>
-        <span class="tag">
-         WPF
+         AI Systems
         </span>
        </div>
-       <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem;">
-        <a class="btn btn-outline" href="#" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-github">
+       <div style="margin-top: 1.5rem;">
+        <a class="btn btn-outline" href="https://youtu.be/CiFc1FQX_bs?si=HYwE-1Ldb0Zu3Q7Y" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
+         <i class="fa-brands fa-youtube">
          </i>
-         GitHub Repo
+         Watch Demo
         </a>
-        <a class="btn btn-outline" href="#" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-solid fa-play">
+       </div>
+      </div>
+     </div>
+     <div class="project-card">
+      <div class="project-visual">
+       [ VFX Demo Visuals ]
+      </div>
+      <div class="project-info">
+       <h3 class="project-title">
+        Real-Time VFX System Demo
+       </h3>
+       <p class="project-desc">
+        A visual system prototype that demonstrates shader-based effects, particle optimization, and render-time performance techniques.
+       </p>
+       <ul class="project-features">
+        <li>
+         <i class="fa-solid fa-check">
          </i>
-         Live Demo / Video
+         Custom Shader Graph and VFX Graph workflows
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Optimized particle systems for real-time rendering
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         High-fidelity environmental effect integration
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Engineered for stable runtime performance
+        </li>
+       </ul>
+       <div class="tags">
+        <span class="tag">
+         Unity
+        </span>
+        <span class="tag">
+         C#
+        </span>
+        <span class="tag">
+         VFX Graph
+        </span>
+        <span class="tag">
+         Shader Graph
+        </span>
+       </div>
+       <div style="margin-top: 1.5rem;">
+        <a class="btn btn-outline" href="https://www.youtube.com/@jessergamer2587" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
+         <i class="fa-brands fa-youtube">
+         </i>
+         Watch Demo
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="project-card">
+      <div class="project-visual">
+       <img src="Screenshots\SquidGame\Capture d'écran 2026-01-06 210005.png" alt="State machine prototype"/>
+      </div>
+      <div class="project-info">
+       <h3 class="project-title">
+        State Machine Prototype
+       </h3>
+       <p class="project-desc">
+        An interactive state-driven system demonstrating rule execution, event handling, and responsive UI feedback.
+       </p>
+       <ul class="project-features">
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Real-time state machine architecture
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Input processing and rule enforcement
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         UI feedback and system event handling
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Implemented with Unity and C# scripting
+        </li>
+       </ul>
+       <div class="tags">
+        <span class="tag">
+         Unity
+        </span>
+        <span class="tag">
+         C#
+        </span>
+        <span class="tag">
+         Prototype
+        </span>
+        <span class="tag">
+         State Machine
+        </span>
+       </div>
+       <div style="margin-top: 1.5rem;">
+        <a class="btn btn-outline" href="https://jessergamer.itch.io/squid-game-prototype" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
+         <i class="fa-brands fa-itch-io">
+         </i>
+         View Prototype
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="project-card">
+      <div class="project-visual">
+       [ Interactive Board System ]
+      </div>
+      <div class="project-info">
+       <h3 class="project-title">
+        Local Multiplayer Board System
+       </h3>
+       <p class="project-desc">
+        A mobile-focused multiplayer board system with turn-based economics, state management, and a polished UI for shared-device workflows.
+       </p>
+       <ul class="project-features">
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Local multiplayer pass-and-play architecture
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Touch-first controls and mobile-friendly layout
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Property economy and turn logic systems
+        </li>
+        <li>
+         <i class="fa-solid fa-check">
+         </i>
+         Built using Unity with focus on interactive UI
+        </li>
+       </ul>
+       <div class="tags">
+        <span class="tag">
+         Unity
+        </span>
+        <span class="tag">
+         C#
+        </span>
+        <span class="tag">
+         Mobile
+        </span>
+        <span class="tag">
+         Local Multiplayer
+        </span>
+       </div>
+       <div style="margin-top: 1.5rem;">
+        <a class="btn btn-outline" href="https://jessergamer.itch.io" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
+         <i class="fa-brands fa-itch-io">
+         </i>
+         View Project
         </a>
        </div>
       </div>
@@ -1512,7 +1417,7 @@ Alongside game development, I also use Unity as a powerful tool to build program
         <li>
          <i class="fa-solid fa-angle-right">
          </i>
-         Data Structures &amp; Algorithms
+         Data Structures & Algorithms
         </li>
         <li>
          <i class="fa-solid fa-angle-right">
@@ -1547,7 +1452,7 @@ Alongside game development, I also use Unity as a powerful tool to build program
        <li>
         <i class="fa-solid fa-magnifying-glass-chart">
         </i>
-        Analytical thinker &amp; strong problem solver
+        Analytical thinker & strong problem solver
        </li>
        <li>
         <i class="fa-solid fa-bug-slash">
@@ -1562,7 +1467,7 @@ Alongside game development, I also use Unity as a powerful tool to build program
        <li>
         <i class="fa-solid fa-rocket">
         </i>
-        Fast learner &amp; highly adaptable
+        Fast learner & highly adaptable
        </li>
        <li>
         <i class="fa-solid fa-network-wired">
@@ -1608,7 +1513,7 @@ Alongside game development, I also use Unity as a powerful tool to build program
          LinkedIn
         </h4>
         <p style="color: var(--text-secondary);">
-         Jesser Abbessi
+         Jesser Abbassi
         </p>
        </div>
       </a>
@@ -1644,7 +1549,7 @@ Alongside game development, I also use Unity as a powerful tool to build program
   </section>
   <footer>
    <p>
-    © 2026 Jesser Abbassi. Built with passion &amp; precision.
+    © 2026 Jesser Abbassi. Built with precision, performance, and engineering discipline.
    </p>
   </footer>
   <script>
@@ -1667,29 +1572,31 @@ Alongside game development, I also use Unity as a powerful tool to build program
             revealOnScroll(); // Trigger on load
         });
         // Automatic Slideshow for Project Images
-document.addEventListener("DOMContentLoaded", () => {
+function setupProjectSlideshows() {
     const visualContainers = document.querySelectorAll('.project-visual');
 
     visualContainers.forEach(container => {
         const images = container.querySelectorAll('img');
-        
-        // If there is more than 1 image, start the slideshow
+
         if (images.length > 1) {
             let currentIndex = 0;
-            images[currentIndex].classList.add('active'); // Show first image
-            
+            images[currentIndex].classList.add('active');
             setInterval(() => {
-                images[currentIndex].classList.remove('active'); // Fade out current
-                currentIndex = (currentIndex + 1) % images.length; // Move to next
-                images[currentIndex].classList.add('active'); // Fade in next
-            }, 3500); // Changes picture every 3.5 seconds
-        } 
-        // If there's only 1 image, just show it permanently
-        else if (images.length === 1) {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }, 3500);
+        } else if (images.length === 1) {
             images[0].classList.add('active');
         }
     });
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupProjectSlideshows);
+} else {
+    setupProjectSlideshows();
+}
   </script>
  </body>
 </html>
