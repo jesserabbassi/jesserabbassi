@@ -3,10 +3,10 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="Jesser Abbassi - Software Engineer focused on backend systems, AI, and full-stack development portfolio" name="description"/>
+  <meta content="Jesser Abbassi - Software engineering student focused on backend, full-stack development, ASP.NET Core, React, PostgreSQL, Docker, AI integration, and interactive systems." name="description"/>
   <meta content="Jesser Abbassi" name="author"/>
-  <meta content="Software Engineering, Backend, API, AI, Machine Learning, C, C++, Python, ASP.NET, PostgreSQL" name="keywords"/>
-  <title>Jesser Abbassi | Software Engineer & Backend Systems</title>
+  <meta content="Software Engineering, Backend, Full-Stack, ASP.NET Core, React, PostgreSQL, Docker, REST API, JWT, AI, Machine Learning, Unity" name="keywords"/>
+  <title>Jesser Abbassi | Backend & Full-Stack Developer</title>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
@@ -111,6 +111,7 @@
             transition: var(--transition-smooth);
             border: none;
             gap: 0.5rem;
+            min-height: 48px;
         }
 
         .btn-primary {
@@ -197,6 +198,25 @@
             color: var(--accent-blue);
         }
 
+        .nav-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-toggle:hover,
+        .nav-toggle:focus-visible {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            outline: none;
+        }
+
         /* --- Hero Section --- */
         .hero {
             height: 100vh;
@@ -250,6 +270,7 @@
 
         .hero-btns {
             display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
         }
 
@@ -284,9 +305,7 @@
         }
 
         .about-image::before {
-            content: 'Professional Image Placeholder';
-            color: var(--text-secondary);
-            font-weight: 600;
+            display: none;
         }
 
         .about-image::after {
@@ -389,6 +408,10 @@
             transition: var(--transition-smooth);
         }
 
+        .project-card.featured {
+            grid-template-columns: 1.25fr 1fr;
+        }
+
         .project-card:hover {
             border-color: rgba(0, 240, 255, 0.3);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -403,6 +426,36 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .project-placeholder {
+            width: min(78%, 420px);
+            min-height: 210px;
+            padding: 2rem;
+            border: 1px solid rgba(0, 240, 255, 0.18);
+            border-radius: 18px;
+            background:
+                linear-gradient(135deg, rgba(0, 240, 255, 0.09), rgba(138, 43, 226, 0.08)),
+                rgba(255, 255, 255, 0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            box-shadow: inset 0 0 30px rgba(0, 240, 255, 0.04);
+        }
+
+        .project-placeholder i {
+            font-size: 2.4rem;
+            color: var(--accent-blue);
+        }
+
+        .project-placeholder strong {
+            font-size: 1.25rem;
+        }
+
+        .project-placeholder span {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
         }
 
         .project-visual img {
@@ -461,6 +514,56 @@
             color: var(--accent-blue);
             margin-top: 1rem;
             font-weight: 600;
+        }
+
+        .project-actions {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .project-actions .btn {
+            padding: 0.65rem 1.35rem;
+            font-size: 0.85rem;
+        }
+
+        .architecture-flow {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            border: 1px solid rgba(0, 240, 255, 0.14);
+            border-radius: 16px;
+            background: rgba(0, 240, 255, 0.035);
+        }
+
+        .architecture-title {
+            color: var(--accent-blue);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .architecture-steps {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+        }
+
+        .architecture-steps span {
+            padding: 0.45rem 0.7rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .architecture-steps i {
+            color: var(--accent-purple);
+            font-size: 0.8rem;
         }
 
         /* --- Education & Strengths --- */
@@ -606,6 +709,9 @@
             .project-card {
                 grid-template-columns: 1fr;
             }
+            .project-card.featured {
+                grid-template-columns: 1fr;
+            }
             .project-visual {
                 border-right: none;
                 border-bottom: 1px solid var(--border-color);
@@ -616,28 +722,116 @@
         }
 
         @media (max-width: 768px) {
+            .container {
+                padding: 0 1.25rem;
+            }
+            .section {
+                padding: 72px 0;
+            }
+            nav {
+                padding: 1rem 0;
+            }
+            .nav-toggle {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
             .nav-links {
-                display: none; /* Hide for mobile, normally replaced with hamburger menu */
+                position: absolute;
+                top: 100%;
+                left: 1.25rem;
+                right: 1.25rem;
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                padding: 0.8rem;
+                background: rgba(18, 18, 18, 0.98);
+                border: 1px solid var(--border-color);
+                border-radius: 16px;
+                box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links a {
+                padding: 0.9rem 1rem;
             }
             .about-grid, .two-col-section, .contact-wrapper {
                 grid-template-columns: 1fr;
             }
+            .hero {
+                min-height: 100vh;
+                height: auto;
+                padding: 120px 0 70px;
+            }
             .hero-btns {
                 flex-direction: column;
+            }
+            .hero-btns .btn {
+                width: 100%;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .skill-card,
+            .info-box,
+            .contact-form {
+                padding: 2rem;
+            }
+            .skill-list {
+                grid-template-columns: 1fr;
+            }
+            .project-title {
+                font-size: 1.55rem;
+            }
+            .project-visual {
+                min-height: 260px;
+            }
+            .project-placeholder {
+                width: 88%;
+                min-height: 180px;
+                padding: 1.5rem;
+            }
+            .contact-item {
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn {
+                padding: 0.9rem 1.2rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .hero h1 {
+                font-size: 2.7rem;
+            }
+            .architecture-steps {
+                align-items: stretch;
+                flex-direction: column;
+            }
+            .architecture-steps i {
+                transform: rotate(90deg);
+                align-self: center;
             }
         }
   </style>
  </head>
  <body>
-  <nav>
+  <nav aria-label="Primary navigation">
    <div class="container nav-container">
-    <div class="logo">
+    <a class="logo" href="#home" aria-label="Jesser Abbassi home">
      Jesser
      <span class="highlight">
       .
      </span>
-    </div>
-    <div class="nav-links">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+     <i class="fa-solid fa-bars">
+     </i>
+    </button>
+    <div class="nav-links" id="primary-navigation">
      <a href="#about">
       About
      </a>
@@ -662,16 +856,16 @@
    <div class="container">
     <div class="hero-content reveal active">
      <div class="hero-subtitle">
-      Software Engineer | AI & Backend Systems
+      Software Engineering Student | Backend & Full-Stack Developer
      </div>
      <h1>
       Jesser Abbassi
      </h1>
      <p class="hero-tagline">
-      Building scalable backend services, AI-powered systems, and full-stack applications for data-driven businesses.
+      I build practical web platforms and interactive systems with ASP.NET Core, React, PostgreSQL, Docker, AI integration, and clean REST API architecture.
      </p>
      <p class="hero-stack">
-      C | C++ | Python | ASP.NET | React | PostgreSQL | Machine Learning
+      ASP.NET Core | React | PostgreSQL | Docker | Python AI/ML | Unity
      </p>
      <div class="hero-btns">
       <a class="btn btn-primary" href="#projects">
@@ -679,723 +873,338 @@
        </i>
        View Projects
       </a>
-      <a class="btn btn-outline" href="#contact">
-       <i class="fa-solid fa-paper-plane">
-       </i>
-       Contact Me
-      </a>
       <a class="btn btn-outline" href="Jesser_Abbassi_CV.pdf" target="_blank" download>
        <i class="fa-solid fa-file-arrow-down">
        </i>
        Download CV
       </a>
+      <a class="btn btn-outline" href="https://github.com/jesserabbassi" target="_blank" rel="noopener noreferrer">
+       <i class="fa-brands fa-github">
+       </i>
+       GitHub
+      </a>
+      <a class="btn btn-outline" href="#contact">
+       <i class="fa-solid fa-paper-plane">
+       </i>
+       Contact Me
+      </a>
      </div>
     </div>
    </div>
   </header>
-  <section class="section" id="about">
+  <main>
+  <section class="section" id="about" aria-labelledby="about-title">
    <div class="container reveal">
     <div class="section-header">
-     <h2 class="section-title">
+     <h2 class="section-title" id="about-title">
       About Me
      </h2>
     </div>
     <div class="about-grid">
-     <div class="about-image"> 
-        <img src="Screenshots/my_img.jpg" alt="Professional portrait of Jesser Abbassi">
+     <div class="about-image">
+      <img src="Screenshots/my_img.jpg" alt="Professional portrait of Jesser Abbassi"/>
      </div>
      <div class="about-text">
       <p>
-       I am an Engineering cycle student focused on software architecture, backend systems, and AI-driven applications. I thrive on designing scalable platforms, data pipelines, and robust API services.
+       I am a software engineering student focused on backend and full-stack development. My work is centered on building clear, maintainable systems that connect solid backend logic with useful user-facing interfaces.
       </p>
       <p>
-       My core strength lies in translating complex requirements into efficient backend logic, clean system design, and maintainable full-stack solutions. I prioritize performance, reliability, and real-world impact.
+       I have hands-on experience with REST APIs, JWT authentication, role-based authorization, PostgreSQL, Docker, and full-stack workflows using ASP.NET Core and React. I care about clean data models, understandable API contracts, and features that solve real workflow problems.
       </p>
       <p>
-       I also use Unity as a practical tool for building interactive systems and data visualization interfaces, especially when technical workflows benefit from a visual front-end or simulation layer.
+       I also study and apply AI/ML concepts with Python, including model training, evaluation, and prediction interfaces. This gives me a strong base for integrating intelligent features into practical applications.
       </p>
       <p>
-       Whether I am building APIs, designing database schemas, or integrating machine learning models, I deliver production-aware solutions that align with engineering best practices.
+       Unity is an additional advantage in my profile: I use it to build interactive systems, simulations, and educational experiences where software engineering meets visual interaction.
       </p>
      </div>
     </div>
    </div>
   </section>
-  <section class="section" id="skills">
+  <section class="section" id="skills" aria-labelledby="skills-title">
    <div class="container reveal">
     <div class="section-header">
-     <h2 class="section-title">
-      Technical Expertise
+     <h2 class="section-title" id="skills-title">
+      Technical Skills
      </h2>
     </div>
     <div class="skills-grid">
      <div class="skill-card">
       <h3>
-       <i class="fa-solid fa-code">
+       <i class="fa-solid fa-server">
        </i>
-       Programming Languages
+       Backend
       </h3>
       <ul class="skill-list">
-       <li>
-        C
-       </li>
-       <li>
-        C++
-       </li>
-       <li>
-        C#
-       </li>
-       <li>
-        Python
-       </li>
-       <li>
-        JavaScript
-       </li>
+       <li>ASP.NET Core</li>
+       <li>REST APIs</li>
+       <li>JWT</li>
+       <li>EF Core</li>
       </ul>
      </div>
      <div class="skill-card">
       <h3>
-       <i class="fa-solid fa-server">
+       <i class="fa-solid fa-window-maximize">
        </i>
-       Backend & APIs
+       Frontend
       </h3>
       <ul class="skill-list">
-       <li>
-        ASP.NET Core
-       </li>
-       <li>
-        REST APIs
-       </li>
-       <li>
-        Microservices
-       </li>
-       <li>
-        System architecture
-       </li>
-       <li>
-        API integration
-       </li>
+       <li>React</li>
+       <li>HTML</li>
+       <li>CSS</li>
+       <li>JavaScript</li>
       </ul>
      </div>
      <div class="skill-card">
       <h3>
        <i class="fa-solid fa-database">
        </i>
-       Databases
+       Database
       </h3>
       <ul class="skill-list">
-       <li>
-        PostgreSQL
-       </li>
-       <li>
-        MySQL
-       </li>
-       <li>
-        SQL & data modeling
-       </li>
-       <li>
-        Performance tuning
-       </li>
-       <li>
-        Database design
-       </li>
+       <li>PostgreSQL</li>
+       <li>MySQL</li>
+       <li>SQL modeling</li>
+       <li>Relational design</li>
+      </ul>
+     </div>
+     <div class="skill-card">
+      <h3>
+       <i class="fa-solid fa-code-branch">
+       </i>
+       DevOps
+      </h3>
+      <ul class="skill-list">
+       <li>Docker</li>
+       <li>Docker Compose</li>
+       <li>GitHub</li>
+       <li>Git</li>
       </ul>
      </div>
      <div class="skill-card">
       <h3>
        <i class="fa-solid fa-brain">
        </i>
-       Machine Learning
+       AI/ML
       </h3>
       <ul class="skill-list">
-       <li>
-        Python ML stack
-       </li>
-       <li>
-        LightGBM
-       </li>
-       <li>
-        XGBoost
-       </li>
-       <li>
-        CatBoost
-       </li>
-       <li>
-        Predictive modeling
-       </li>
+       <li>Python</li>
+       <li>LightGBM</li>
+       <li>XGBoost</li>
+       <li>CatBoost</li>
+       <li>Streamlit</li>
       </ul>
      </div>
      <div class="skill-card">
       <h3>
-       <i class="fa-solid fa-wrench">
+       <i class="fa-solid fa-cube">
        </i>
-       Tools
+       Interactive Systems
       </h3>
       <ul class="skill-list">
-       <li>
-        Git & GitHub
-       </li>
-       <li>
-        VS Code
-       </li>
-       <li>
-        Unity (interactive systems)
-       </li>
+       <li>Unity</li>
+       <li>C#</li>
+       <li>REST API integration</li>
+       <li>3D simulations</li>
       </ul>
      </div>
     </div>
    </div>
   </section>
-  <section class="section" id="projects">
+  <section class="section" id="projects" aria-labelledby="projects-title">
    <div class="container reveal">
     <div class="section-header">
-     <h2 class="section-title">
+     <h2 class="section-title" id="projects-title">
       Featured Projects
      </h2>
     </div>
     <div class="projects-grid">
-     <div class="project-card">
-      <div class="project-visual">
-       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115930.png"/>
-       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 120032.png"/>
-       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115828.png"/>
-       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115851.png"/>
-       <img alt="Flood Prediction Model Visualization" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115912.png"/>
+     <article class="project-card featured">
+      <div class="project-visual" aria-label="KawiNiveau architecture placeholder">
+       <div class="project-placeholder">
+        <i class="fa-solid fa-layer-group">
+        </i>
+        <strong>KawiNiveau SaaS Platform</strong>
+        <span>Full-stack learning platform with authentication, course management, analytics, and Dockerized services.</span>
+       </div>
       </div>
       <div class="project-info">
        <h3 class="project-title">
-        Flood Prediction ML Model
+        KawiNiveau - Full-Stack SaaS Learning Platform
        </h3>
        <p class="project-desc">
-        An intelligent predictive system for flood forecasting that combines data engineering, feature selection, and scalable model evaluation.
+        A learning management platform designed around secure user access, structured course delivery, progress tracking, and admin visibility.
        </p>
        <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Designed data pipelines for meteorological preprocessing
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Built ensemble models with LightGBM and CatBoost
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Optimized model performance and validation workflows
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Delivered a production-aware forecasting solution
-        </li>
+        <li><i class="fa-solid fa-check"></i>JWT authentication and role-based authorization</li>
+        <li><i class="fa-solid fa-check"></i>Courses, lessons, enrollments, and progress tracking</li>
+        <li><i class="fa-solid fa-check"></i>Admin dashboard and analytics-oriented management views</li>
+        <li><i class="fa-solid fa-check"></i>Dockerized frontend, backend, and database architecture</li>
        </ul>
+       <div class="architecture-flow" aria-label="System design architecture">
+        <div class="architecture-title">
+         System Design / Architecture
+        </div>
+        <div class="architecture-steps">
+         <span>React Frontend</span>
+         <i class="fa-solid fa-arrow-right"></i>
+         <span>ASP.NET Core REST API</span>
+         <i class="fa-solid fa-arrow-right"></i>
+         <span>PostgreSQL Database</span>
+         <i class="fa-solid fa-arrow-right"></i>
+         <span>Docker Compose orchestration</span>
+        </div>
+       </div>
        <div class="tags">
-        <span class="tag">
-         Python
-        </span>
-        <span class="tag">
-         Streamlit
-        </span>
-        <span class="tag">
-         LightGBM
-        </span>
-        <span class="tag">
-         CatBoost
-        </span>
-        <span class="tag">
-         Machine Learning
-        </span>
+        <span class="tag">ASP.NET Core</span>
+        <span class="tag">React</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">JWT</span>
+        <span class="tag">Docker Compose</span>
+        <span class="tag">REST API</span>
        </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://github.com/jesserabbassi/Flood_Prediction_Model" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-github">
-         </i>
-         View Code
-        </a>
-       </div>
-       <p class="project-note">
-        * Includes technical documentation for model architecture and evaluation.
-       </p>
       </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       [ Data Visualization Placeholder ]
+     </article>
+     <article class="project-card">
+      <div class="project-visual" aria-label="StageConnect workflow placeholder">
+       <div class="project-placeholder">
+        <i class="fa-solid fa-briefcase">
+        </i>
+        <strong>StageConnect</strong>
+        <span>Internship offers, applicant portfolios, CV workflow, and admin/recruiter/student coordination.</span>
+       </div>
       </div>
       <div class="project-info">
        <h3 class="project-title">
-        Penalty Kick Predictor
+        StageConnect - Internship Management Platform
        </h3>
        <p class="project-desc">
-        A predictive analytics system that classifies penalty kick outcomes using sports data, feature engineering, and ensemble modeling.
+        A web platform for organizing internship opportunities and supporting the workflow between students, recruiters, and administrators.
        </p>
        <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Implemented advanced feature engineering pipelines
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Trained and tuned LightGBM and XGBoost models
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Measured performance with rigorous validation
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Built a practical system for predictive decision support
-        </li>
+        <li><i class="fa-solid fa-check"></i>Internship offers management</li>
+        <li><i class="fa-solid fa-check"></i>Applicant profile and portfolio areas</li>
+        <li><i class="fa-solid fa-check"></i>CV upload workflow</li>
+        <li><i class="fa-solid fa-check"></i>Admin dashboard for offers and recruiter/student flow</li>
        </ul>
        <div class="tags">
-        <span class="tag">
-         Python
-        </span>
-        <span class="tag">
-         LightGBM
-        </span>
-        <span class="tag">
-         Machine Learning
-        </span>
-        <span class="tag">
-         Data Science
-        </span>
+        <span class="tag">PHP</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Dashboard</span>
        </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://github.com/jesserabbassi/Penalty-Kick-Outcome-Prediction" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-github">
-         </i>
+      </div>
+     </article>
+     <article class="project-card">
+      <div class="project-visual" aria-label="Reservation and scheduling architecture placeholder">
+       <div class="project-placeholder">
+        <i class="fa-solid fa-calendar-check">
+        </i>
+        <strong>Reservation & Scheduling</strong>
+        <span>C logic, Unity visualization, and Python AI/optimization support for resource scheduling.</span>
+       </div>
+      </div>
+      <div class="project-info">
+       <h3 class="project-title">
+        Intelligent Reservation & Scheduling System
+       </h3>
+       <p class="project-desc">
+        A reservation management system combining structured scheduling logic, resource handling, interactive visualization, and optimization-oriented Python modules.
+       </p>
+       <ul class="project-features">
+        <li><i class="fa-solid fa-check"></i>Reservation management logic</li>
+        <li><i class="fa-solid fa-check"></i>Scheduling and resource management</li>
+        <li><i class="fa-solid fa-check"></i>Unity visualization layer</li>
+        <li><i class="fa-solid fa-check"></i>Python AI/optimization module</li>
+       </ul>
+       <div class="tags">
+        <span class="tag">C</span>
+        <span class="tag">Unity</span>
+        <span class="tag">Python</span>
+        <span class="tag">Scheduling</span>
+        <span class="tag">AI Integration</span>
+       </div>
+       <div class="project-actions">
+        <a class="btn btn-outline" href="https://github.com/jesserabbassi/ProjetGestionDeReservation" target="_blank" rel="noopener noreferrer">
+         <i class="fa-brands fa-github"></i>
          View Code
         </a>
        </div>
       </div>
-     </div>
-     <div class="project-card">
+     </article>
+     <article class="project-card">
       <div class="project-visual">
-       [ System Architecture Placeholder ]
+       <img alt="Flood prediction Streamlit dashboard screenshot" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115930.png"/>
+       <img alt="Flood prediction model results screenshot" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 120032.png"/>
+       <img alt="Flood prediction data preprocessing screenshot" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115828.png"/>
+       <img alt="Flood prediction cross-validation screenshot" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115851.png"/>
+       <img alt="Flood prediction interface screenshot" src="Screenshots/FloodPredictionShots/Capture d'écran 2026-03-17 115912.png"/>
       </div>
       <div class="project-info">
        <h3 class="project-title">
-        ProjetGestionDeReservation
+        Flood Prediction System
        </h3>
        <p class="project-desc">
-        A reservation management system combining a C backend, interactive 3D visualization, and Python-based AI modules for intelligent scheduling.
+        A machine learning application for flood prediction using data preprocessing, ensemble models, validation workflows, and an interactive prediction interface.
        </p>
        <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Structured C backend and scheduling logic
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Unity-based visualization for room planning
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Integrated predictive intelligence in Python
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Designed a modular architecture for expandability
-        </li>
+        <li><i class="fa-solid fa-check"></i>Data preprocessing and feature preparation</li>
+        <li><i class="fa-solid fa-check"></i>Model training with LightGBM, CatBoost, and XGBoost</li>
+        <li><i class="fa-solid fa-check"></i>Cross-validation and performance comparison</li>
+        <li><i class="fa-solid fa-check"></i>Streamlit prediction interface</li>
        </ul>
        <div class="tags">
-        <span class="tag">
-         C
-        </span>
-        <span class="tag">
-         Unity (C#)
-        </span>
-        <span class="tag">
-         Python
-        </span>
-        <span class="tag">
-         AI Integration
-        </span>
+        <span class="tag">Python</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">LightGBM</span>
+        <span class="tag">CatBoost</span>
+        <span class="tag">XGBoost</span>
        </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://github.com/jesserabbassi/ProjetGestionDeReservation" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-github">
-         </i>
+       <div class="project-actions">
+        <a class="btn btn-outline" href="https://github.com/jesserabbassi/Flood_Prediction_Model" target="_blank" rel="noopener noreferrer">
+         <i class="fa-brands fa-github"></i>
          View Code
         </a>
        </div>
-       <p class="project-note">
-        * See GitHub repository and README for technical design details.
-       </p>
       </div>
-     </div>
-     <div class="project-card">
+     </article>
+     <article class="project-card">
       <div class="project-visual">
-       <img alt="Educational Dashboard Interface" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 232132.png"/>
-       <img alt="Educational Dashboard Interface" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 232105.png"/>
-       <img alt="Educational Dashboard Interface" src="Screenshots\HumanBodyGameShots\Capture d'écran 2026-03-27 231915.png"/>
+       <img alt="Educational 3D human body exploration screenshot" src="Screenshots/HumanBodyGameShots/Capture d'écran 2026-03-27 232132.png"/>
+       <img alt="Interactive organ exploration interface screenshot" src="Screenshots/HumanBodyGameShots/Capture d'écran 2026-03-27 232105.png"/>
+       <img alt="Educational teacher dashboard screenshot" src="Screenshots/HumanBodyGameShots/Capture d'écran 2026-03-27 231915.png"/>
       </div>
       <div class="project-info">
        <h3 class="project-title">
-        Educational System & Teacher Dashboard
+        Educational 3D Interactive System
        </h3>
        <p class="project-desc">
-        A bilingual educational platform with a secure teacher dashboard, student progress tracking, and a full-stack backend powered by Supabase and PostgreSQL.
+        An educational Unity system for 3D human body exploration, combining interactive learning content with backend-connected student and teacher workflows.
        </p>
        <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Responsive UI Toolkit interface with polished interactions
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Secure login and registration via Supabase REST APIs
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Teacher dashboard with reporting and analytics
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Full Arabic/English localization and privacy controls
-        </li>
+        <li><i class="fa-solid fa-check"></i>3D human body exploration</li>
+        <li><i class="fa-solid fa-check"></i>Interactive organs and learning interactions</li>
+        <li><i class="fa-solid fa-check"></i>Student progress tracking</li>
+        <li><i class="fa-solid fa-check"></i>Teacher dashboard connected through REST APIs</li>
        </ul>
        <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         UI Toolkit
-        </span>
-        <span class="tag">
-         PostgreSQL
-        </span>
-        <span class="tag">
-         Supabase
-        </span>
-        <span class="tag">
-         REST APIs
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem;">
-        <a class="btn btn-outline" href="#" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-github">
-         </i>
-         GitHub Repo
-        </a>
-        <a class="btn btn-outline" href="#" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-solid fa-play">
-         </i>
-         Demo / Video
-        </a>
+        <span class="tag">Unity</span>
+        <span class="tag">C#</span>
+        <span class="tag">Supabase</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">REST APIs</span>
        </div>
       </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       [ Chatbot UI + API Integration ]
-      </div>
-      <div class="project-info">
-        <h3 class="project-title">
-        Unity Chatbot (API Integration)
-       </h3>
-       <p class="project-desc">
-        A conversation interface built in Unity that connects to backend APIs for dynamic response generation and user context management.
-       </p>
-       <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         REST API integration for live text responses
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Interactive chat UI with session history
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Configurable prompts and backend flexibility
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Modular architecture for OpenAI/local services
-        </li>
-       </ul>
-       <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         API
-        </span>
-        <span class="tag">
-         Chatbot
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="#" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-github">
-         </i>
-         View on GitHub
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133137.png"/>
-       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133042.png"/>
-       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133000.png"/>
-       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133221.png"/>
-       <img alt="AI-Driven Interactive Simulation" src="Screenshots/HorroShots/Capture d'écran 2026-02-21 133015.png"/>
-      </div>
-      <div class="project-info">
-       <h3 class="project-title">
-        AI-Driven Interactive Simulation
-       </h3>
-       <p class="project-desc">
-        A real-time simulation showcasing AI patrol logic, object interaction systems, and stateful environment coordination in an engineered interactive experience.
-       </p>
-       <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         AI patrol system and NavMesh-driven movement
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Complex object interaction and state logic
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Real-time system behavior and optimization
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Designed to demonstrate interactive system flows
-        </li>
-       </ul>
-       <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         Simulation
-        </span>
-        <span class="tag">
-         AI Systems
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://youtu.be/CiFc1FQX_bs?si=HYwE-1Ldb0Zu3Q7Y" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-youtube">
-         </i>
-         Watch Demo
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       [ VFX Demo Visuals ]
-      </div>
-      <div class="project-info">
-       <h3 class="project-title">
-        Real-Time VFX System Demo
-       </h3>
-       <p class="project-desc">
-        A visual system prototype that demonstrates shader-based effects, particle optimization, and render-time performance techniques.
-       </p>
-       <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Custom Shader Graph and VFX Graph workflows
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Optimized particle systems for real-time rendering
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         High-fidelity environmental effect integration
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Engineered for stable runtime performance
-        </li>
-       </ul>
-       <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         VFX Graph
-        </span>
-        <span class="tag">
-         Shader Graph
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://www.youtube.com/@jessergamer2587" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-youtube">
-         </i>
-         Watch Demo
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       <img src="Screenshots\SquidGame\Capture d'écran 2026-01-06 210005.png" alt="State machine prototype"/>
-      </div>
-      <div class="project-info">
-       <h3 class="project-title">
-        State Machine Prototype
-       </h3>
-       <p class="project-desc">
-        An interactive state-driven system demonstrating rule execution, event handling, and responsive UI feedback.
-       </p>
-       <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Real-time state machine architecture
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Input processing and rule enforcement
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         UI feedback and system event handling
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Implemented with Unity and C# scripting
-        </li>
-       </ul>
-       <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         Prototype
-        </span>
-        <span class="tag">
-         State Machine
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://jessergamer.itch.io/squid-game-prototype" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-itch-io">
-         </i>
-         View Prototype
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="project-card">
-      <div class="project-visual">
-       [ Interactive Board System ]
-      </div>
-      <div class="project-info">
-       <h3 class="project-title">
-        Local Multiplayer Board System
-       </h3>
-       <p class="project-desc">
-        A mobile-focused multiplayer board system with turn-based economics, state management, and a polished UI for shared-device workflows.
-       </p>
-       <ul class="project-features">
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Local multiplayer pass-and-play architecture
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Touch-first controls and mobile-friendly layout
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Property economy and turn logic systems
-        </li>
-        <li>
-         <i class="fa-solid fa-check">
-         </i>
-         Built using Unity with focus on interactive UI
-        </li>
-       </ul>
-       <div class="tags">
-        <span class="tag">
-         Unity
-        </span>
-        <span class="tag">
-         C#
-        </span>
-        <span class="tag">
-         Mobile
-        </span>
-        <span class="tag">
-         Local Multiplayer
-        </span>
-       </div>
-       <div style="margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="https://jessergamer.itch.io" style="padding:0.6rem 1.5rem; font-size:0.85rem;">
-         <i class="fa-brands fa-itch-io">
-         </i>
-         View Project
-        </a>
-       </div>
-      </div>
-     </div>
+     </article>
     </div>
    </div>
   </section>
-  <section class="section" id="education">
+  <section class="section" id="education" aria-labelledby="education-title">
    <div class="container reveal">
     <div class="two-col-section">
      <div class="info-box">
-      <h3>
+      <h3 id="education-title">
        <i class="fa-solid fa-graduation-cap highlight">
        </i>
        Education
@@ -1457,7 +1266,7 @@
        <li>
         <i class="fa-solid fa-bug-slash">
         </i>
-        Exceptional debugging skills
+        Strong debugging skills
        </li>
        <li>
         <i class="fa-solid fa-code-branch">
@@ -1484,10 +1293,10 @@
     </div>
    </div>
   </section>
-  <section class="section" id="contact">
+  <section class="section" id="contact" aria-labelledby="contact-title">
    <div class="container reveal">
     <div class="section-header">
-     <h2 class="section-title">
+     <h2 class="section-title" id="contact-title">
       Let's Connect
      </h2>
     </div>
@@ -1505,7 +1314,7 @@
         </p>
        </div>
       </a>
-      <a class="contact-item" href="https://www.linkedin.com/in/jesser-abbassi-753203389/">
+      <a class="contact-item" href="https://www.linkedin.com/in/jesser-abbassi-753203389/" target="_blank" rel="noopener noreferrer">
        <i class="fa-brands fa-linkedin">
        </i>
        <div>
@@ -1517,7 +1326,7 @@
         </p>
        </div>
       </a>
-      <a class="contact-item" href="https://github.com/jesserabbassi">
+      <a class="contact-item" href="https://github.com/jesserabbassi" target="_blank" rel="noopener noreferrer">
        <i class="fa-brands fa-github">
        </i>
        <div>
@@ -1532,13 +1341,13 @@
      </div>
      <form action="https://formspree.io/f/mojnyqen" class="contact-form" method="POST">
       <div class="form-group">
-       <input name="name" placeholder="Your Name" required="" type="text"/>
+       <input aria-label="Your name" name="name" placeholder="Your Name" required="" type="text"/>
       </div>
       <div class="form-group">
-       <input name="email" placeholder="Your Email" required="" type="email"/>
+       <input aria-label="Your email" name="email" placeholder="Your Email" required="" type="email"/>
       </div>
       <div class="form-group">
-       <textarea name="message" placeholder="Your Message" required=""></textarea>
+       <textarea aria-label="Your message" name="message" placeholder="Your Message" required=""></textarea>
       </div>
       <button class="btn btn-primary" style="width: 100%;" type="submit">
        Send Message
@@ -1547,6 +1356,7 @@
     </div>
    </div>
   </section>
+  </main>
   <footer>
    <p>
     © 2026 Jesser Abbassi. Built with precision, performance, and engineering discipline.
@@ -1554,7 +1364,25 @@
   </footer>
   <script>
    document.addEventListener("DOMContentLoaded", () => {
+            const navToggle = document.querySelector(".nav-toggle");
+            const navLinks = document.querySelector(".nav-links");
             const reveals = document.querySelectorAll(".reveal");
+
+            if (navToggle && navLinks) {
+                navToggle.addEventListener("click", () => {
+                    const isOpen = navLinks.classList.toggle("active");
+                    navToggle.setAttribute("aria-expanded", String(isOpen));
+                    navToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+                });
+
+                navLinks.querySelectorAll("a").forEach((link) => {
+                    link.addEventListener("click", () => {
+                        navLinks.classList.remove("active");
+                        navToggle.setAttribute("aria-expanded", "false");
+                        navToggle.setAttribute("aria-label", "Open navigation menu");
+                    });
+                });
+            }
 
             const revealOnScroll = () => {
                 const windowHeight = window.innerHeight;
