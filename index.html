@@ -51,6 +51,12 @@
             color: inherit;
         }
 
+        code {
+            color: var(--accent-blue);
+            font-family: Consolas, Monaco, monospace;
+            font-size: 0.92em;
+        }
+
         ul {
             list-style: none;
         }
@@ -1111,26 +1117,33 @@
         <div class="project-placeholder">
          <i class="fa-solid fa-briefcase"></i>
          <strong>StageConnect</strong>
-         <span>Internship offers, applicant portfolios, CV workflow, and admin/recruiter/student coordination.</span>
+         <span>Full-stack internship platform with student portfolios, CV uploads, admin workflows, and Groq-powered AI guidance.</span>
         </div>
        </div>
        <div class="project-info">
-        <h3 class="project-title">StageConnect - Internship Management Platform</h3>
+        <h3 class="project-title">StageConnect - Full-Stack Internship Management Platform</h3>
         <p class="project-desc">
-         A web platform for organizing internship opportunities and supporting the workflow between students, recruiters, and administrators.
+         A full-stack internship management platform that helps students discover offers, build a public portfolio, upload a CV, apply to internships, track application status, and get guidance from a Groq-powered AI assistant.
         </p>
         <ul class="project-features">
-         <li><i class="fa-solid fa-check"></i>Internship offers management</li>
-         <li><i class="fa-solid fa-check"></i>Applicant profile and portfolio areas</li>
-         <li><i class="fa-solid fa-check"></i>CV upload workflow</li>
-         <li><i class="fa-solid fa-check"></i>Admin dashboard for offers and recruiter/student flow</li>
+         <li><i class="fa-solid fa-check"></i>Student registration, login, logout, session authentication, and role-based access for students/admins</li>
+         <li><i class="fa-solid fa-check"></i>Dynamic MySQL internship offers with search/filter by keyword, company, location, duration, and sorting</li>
+         <li><i class="fa-solid fa-check"></i>Student portfolio/profile with contact info, bio, skills, education, experience, languages, and PDF CV upload</li>
+         <li><i class="fa-solid fa-check"></i>Applications with duplicate prevention and status tracking: pending, accepted, rejected</li>
+         <li><i class="fa-solid fa-check"></i>Protected admin dashboard for statistics, offers CRUD, application review, CV access, and status updates</li>
+         <li><i class="fa-solid fa-check"></i>Groq AI assistant on home/offers pages using a PHP server-side endpoint, <code>llama-3.3-70b-versatile</code>, session chat history, validation, loading states, and JSON fetch communication</li>
+         <li><i class="fa-solid fa-check"></i>PDO prepared statements, relational tables, foreign keys, unique constraints, <code>.env</code> secrets, password hashing, CV validation, and server-side API key protection</li>
         </ul>
         <div class="tags">
          <span class="tag">PHP</span>
+         <span class="tag">MySQL</span>
+         <span class="tag">PDO</span>
          <span class="tag">HTML</span>
          <span class="tag">CSS</span>
          <span class="tag">JavaScript</span>
-         <span class="tag">Dashboard</span>
+         <span class="tag">XAMPP/Apache</span>
+         <span class="tag">Groq API</span>
+         <span class="tag">AI Chatbot</span>
         </div>
        </div>
       </article>
