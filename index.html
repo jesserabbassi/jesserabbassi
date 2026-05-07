@@ -434,6 +434,7 @@
         .project-card {
             display: grid;
             grid-template-columns: 2fr 1fr;
+            align-items: start;
             gap: 3rem;
             background: var(--bg-surface);
             border-radius: 24px;
@@ -457,7 +458,9 @@
 
         .project-visual {
             background: #1a1a1a;
-            min-height: 350px;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            min-height: 0;
             border-right: 1px solid var(--border-color);
             position: relative;
             overflow: hidden;
@@ -502,7 +505,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            object-position: left center;
+            object-position: center;
             opacity: 0;
             transition: opacity 1s ease-in-out;
         }
@@ -826,7 +829,8 @@
                 font-size: 1.55rem;
             }
             .project-visual {
-                min-height: 260px;
+                aspect-ratio: 16 / 10;
+                min-height: 0;
             }
             .project-placeholder {
                 width: 88%;
@@ -1113,12 +1117,16 @@
        </div>
       </article>
       <article class="project-card compact">
-       <div class="project-visual" aria-label="StageConnect workflow placeholder">
-        <div class="project-placeholder">
-         <i class="fa-solid fa-briefcase"></i>
-         <strong>StageConnect</strong>
-         <span>Full-stack internship platform with student portfolios, CV uploads, admin workflows, and Groq-powered AI guidance.</span>
-        </div>
+       <div class="project-visual">
+        <img alt="StageConnect home page screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121226.png"/>
+        <img alt="StageConnect internship offers page screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121252.png"/>
+        <img alt="StageConnect student portfolio screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121359.png"/>
+        <img alt="StageConnect CV upload workflow screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121415.png"/>
+        <img alt="StageConnect application status screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121432.png"/>
+        <img alt="StageConnect AI assistant widget screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121448.png"/>
+        <img alt="StageConnect admin dashboard screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121502.png"/>
+        <img alt="StageConnect offer management screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121539.png"/>
+        <img alt="StageConnect application review screenshot" src="Screenshots/StageConnectShots/Capture d'écran 2026-05-07 121559.png"/>
        </div>
        <div class="project-info">
         <h3 class="project-title">StageConnect - Full-Stack Internship Management Platform</h3>
