@@ -1,32 +1,62 @@
-<h1 align="center">Hi, I'm Jesser Abbassi</h1>
-<h3 align="center">Full-stack developer focused on web, cloud, AI, and game development</h3>
+# Jesser Abbassi Portfolio
 
-<p align="center">
-  <a href="https://jesserabbassi.github.io/jesserabbassi/">Portfolio</a>
-  &nbsp;|&nbsp;
-  <a href="mailto:jesserabbassi@gmail.com">Email</a>
-  &nbsp;|&nbsp;
-  <a href="https://www.linkedin.com/in/jesser-abbassi/">LinkedIn</a>
-</p>
+A premium portfolio rebuilt with Next.js App Router, TypeScript, Tailwind CSS, and Framer Motion.
 
-## About Me
+## What Changed
 
-- I am currently learning **DevOps** and **cloud engineering**.
-- All of my projects are available on my [portfolio](https://jesserabbassi.github.io/jesserabbassi/).
-- Ask me about **React, Python, machine learning, C#, ASP.NET, and Unity**.
-- Reach me at **jesserabbassi@gmail.com**.
+- Replaced a single large static `index.html` with a component-based Next.js application.
+- Moved portfolio content into typed data in `lib/data.ts`.
+- Added reusable sections, project cards, navigation, page transitions, and contact UI.
+- Reframed projects as case studies using Problem, Solution, Impact, stack, features, and links.
+- Added SEO metadata, optimized images with `next/image`, accessible form labels, and Vercel-ready scripts.
 
-## Connect With Me
+## Project Structure
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/jesser-abbassi/" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" width="40" height="40" /></a>&nbsp;
-  <a href="https://www.facebook.com/jesser.abbassi" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="Facebook" width="40" height="40" /></a>&nbsp;
-  <a href="https://instagram.com/abbassijesser" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram" width="40" height="40" /></a>&nbsp;
-  <a href="https://www.youtube.com/@jessergamer" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="YouTube" width="40" height="40" /></a>
-</p>
+```txt
+app/
+  page.tsx
+  layout.tsx
+  template.tsx
+  globals.css
+  about/page.tsx
+  contact/page.tsx
+  projects/page.tsx
+components/
+  ContactPanel.tsx
+  Hero.tsx
+  Navbar.tsx
+  PageTransition.tsx
+  ProjectCard.tsx
+  Reveal.tsx
+  Section.tsx
+lib/
+  data.ts
+public/
+  images/
+```
 
-## Languages And Tools
+## Run Locally
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=aws,blender,c,cpp,cs,css,dart,docker,dotnet,flutter,git,html,js,linux,mysql,nginx,opencv,php,postgres,python,react,unity&perline=11" alt="AWS, Blender, C, C++, C#, CSS, Dart, Docker, .NET, Flutter, Git, HTML, JavaScript, Linux, MySQL, Nginx, OpenCV, PHP, PostgreSQL, Python, React, and Unity" />
-</p>
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Production Build
+
+```bash
+npm run build
+npm run start
+```
+
+## Deploy On Vercel
+
+1. Push the repository to GitHub.
+2. Import the repository in Vercel.
+3. Use the default Next.js settings.
+4. Build command: `npm run build`.
+5. Output is handled automatically by Vercel for Next.js.
+
+No environment variables are required for the current version. The contact form posts to Formspree.

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-inter: "Inter";
+  --font-space: "Space Grotesk";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #07080d;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(115deg, rgba(45, 212, 191, 0.09), transparent 34%),
+    linear-gradient(245deg, rgba(244, 162, 97, 0.08), transparent 35%),
+    #07080d;
+  color: #f6f0df;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  pointer-events: none;
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 72%);
+}
+
+::selection {
+  background: rgba(45, 212, 191, 0.35);
+  color: #f6f0df;
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 py-20 md:px-8 md:py-28;
+  }
+
+  .eyebrow {
+    @apply text-sm font-semibold uppercase text-signal;
+    letter-spacing: 0.16em;
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-semibold leading-tight text-ivory md:text-5xl;
+  }
+
+  .premium-panel {
+    @apply border border-white/10 bg-white/[0.045] shadow-card backdrop-blur-xl;
+    border-radius: 8px;
+  }
+
+  .primary-button {
+    @apply inline-flex min-h-11 items-center gap-2 rounded-full bg-ivory px-5 py-3 text-sm font-bold text-ink transition duration-300 hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-signal focus:ring-offset-2 focus:ring-offset-ink;
+  }
+
+  .ghost-button {
+    @apply inline-flex min-h-11 items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-5 py-3 text-sm font-semibold text-ivory transition duration-300 hover:-translate-y-0.5 hover:border-signal/40 hover:bg-white/[0.075] focus:outline-none focus:ring-2 focus:ring-signal focus:ring-offset-2 focus:ring-offset-ink;
+  }
+
+  .form-field {
+    @apply w-full border border-white/10 bg-white/[0.04] px-4 py-3 text-ivory outline-none transition placeholder:text-mist/55 focus:border-signal/60 focus:ring-2 focus:ring-signal/20;
+    border-radius: 8px;
+  }
+}
