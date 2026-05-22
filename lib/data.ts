@@ -221,7 +221,10 @@ export const projects: Project[] = [
       "Cross-validation and performance comparison",
       "Streamlit prediction UI"
     ],
-    links: [{ label: "GitHub", href: "https://github.com/jesserabbassi/Flood_Prediction_Model", external: true }],
+    links: [
+      { label: "GitHub", href: "https://github.com/jesserabbassi/Flood_Prediction_Model", external: true },
+      { label: "Live demo", href: "https://floodpredictionmodel-cpvabyjlzgflamkhjxu2kj.streamlit.app/", external: true }
+    ],
     featured: true
   },
   {
@@ -264,7 +267,7 @@ export const projects: Project[] = [
       "Vehicle controller, fuel tracking, and driving loop",
       "Scene-based UI, help screens, and win/lose states"
     ],
-    links: []
+    links: [{label: "GitHub", href: "https://github.com/jesserabbassi/Aam-Gaddour", external: true}]
   },
   {
     slug: "ai-simulation",
@@ -324,7 +327,7 @@ export const projects: Project[] = [
       "Mock data architecture ready for CMS/API integration",
       "Vercel-ready deployment setup"
     ],
-    links: []
+    links: [{ label: "View site", href: "https://electrical-infrastructure-demo.onrender.com/", external: true }]
   },
   {
     slug: "interior-portfolio",
@@ -344,7 +347,7 @@ export const projects: Project[] = [
       "Responsive navigation and contact structure",
       "Visual system tuned for a design audience"
     ],
-    links: []
+    links: [{ label: "View portfolio", href: "https://hmaied-mariem.vercel.app/", external: true }]
   },
   {
     slug: "reservation-system",
