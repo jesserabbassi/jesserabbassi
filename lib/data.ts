@@ -47,7 +47,7 @@ export type SkillGroup = {
 
 export const profile = {
   name: "Jesser Abbassi",
-  role: "Full-stack engineer building secure platforms, AI-assisted products, and interactive systems.",
+  role: "Full-stack & game developer building secure platforms, AI-assisted products, Unity systems, and gameplay-driven interactive experiences.",
   location: "Tunisia",
   email: "jesserabbassi@gmail.com",
   phone: "+216 56 098 980",
@@ -88,6 +88,12 @@ export const capabilities = [
     description:
       "Practical AI and ML features wrapped in usable products: prediction dashboards, assistant flows, validation, and feedback states.",
     icon: Brain
+  },
+  {
+    title: "Game development",
+    description:
+      "Unity-based game systems spanning 3D interaction, state machines, gameplay loops, simulation logic, UI flows, and real-time visual effects.",
+    icon: Sparkles
   }
 ];
 
@@ -118,9 +124,9 @@ export const skillGroups: SkillGroup[] = [
     items: ["Python", "LightGBM", "XGBoost", "CatBoost", "Streamlit"]
   },
   {
-    title: "Interactive Systems",
+    title: "Game Development",
     icon: Sparkles,
-    items: ["Unity", "C#", "REST API integration", "3D simulations"]
+    items: ["Unity", "C#", "Game mechanics", "State machines", "UI Toolkit", "VFX Graph", "3D simulations"]
   }
 ];
 
@@ -456,7 +462,7 @@ export const experienceHighlights = [
   {
     title: "Execution range",
     icon: Code2,
-    text: "My projects span SaaS dashboards, AI workflows, PHP/MySQL platforms, ASP.NET Core APIs, and Unity systems."
+    text: "My projects span SaaS dashboards, AI workflows, PHP/MySQL platforms, ASP.NET Core APIs, and Unity game and simulation systems."
   },
   {
     title: "Learning velocity",

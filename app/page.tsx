@@ -63,10 +63,10 @@ export default function HomePage() {
             <div className="grid gap-4">
               <div className="premium-panel p-6 md:p-8">
                 <p className="text-lg leading-8 text-mist">
-                  I am a software engineering student focused on backend and full-stack development. My work centers on maintainable systems that connect solid backend logic with useful, polished interfaces.
+                  I am a software engineering student focused on backend, full-stack, and game development. My work centers on maintainable systems that connect solid backend logic with useful, polished interfaces and interactive experiences.
                 </p>
                 <p className="mt-5 text-lg leading-8 text-mist">
-                  I have hands-on experience with REST APIs, JWT authentication, role-based authorization, PostgreSQL, Docker, ASP.NET Core, React, Python ML workflows, and Unity systems.
+                  I have hands-on experience with REST APIs, JWT authentication, role-based authorization, PostgreSQL, Docker, ASP.NET Core, React, Python ML workflows, and Unity systems for simulations, gameplay loops, and educational 3D interaction.
                 </p>
               </div>
               <div className="grid gap-4 md:grid-cols-3">
@@ -102,7 +102,7 @@ export default function HomePage() {
         title="From portfolio page to product signal"
         description="The redesign shifts the site away from a long visual list and toward a recruiter-friendly case-study experience: clearer positioning, stronger hierarchy, better performance, and content that explains engineering judgment."
       >
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {capabilities.map((item, index) => {
             const Icon = item.icon;
             return (

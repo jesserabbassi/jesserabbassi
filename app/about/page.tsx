@@ -7,7 +7,7 @@ import { education, experienceHighlights, profile, skillGroups } from "@/lib/dat
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Jesser Abbassi, a software engineering student focused on full-stack engineering, AI workflows, and interactive systems."
+  description: "About Jesser Abbassi, a software engineering student focused on full-stack engineering, AI workflows, and Unity-based game and interactive systems."
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
       <Section
         eyebrow="About Jesser"
         title="I build systems that make the product easier to trust."
-        description="My strongest work sits where backend architecture, product workflows, and polished interaction meet."
+        description="My strongest work sits where backend architecture, product workflows, game systems, and polished interaction meet."
       >
         <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr]">
           <Reveal>
@@ -36,17 +36,17 @@ export default function AboutPage() {
           <Reveal delay={0.08}>
             <div className="premium-panel p-6 md:p-8">
               <p className="text-lg leading-8 text-mist">
-                I am a software engineering student at ENSI focused on backend and full-stack development. I care about clear data models, understandable API contracts, thoughtful UX, and features that solve real workflow problems.
+                I am a software engineering student at ENSI focused on backend, full-stack, and game development. I care about clear data models, understandable API contracts, thoughtful UX, and features that solve real workflow problems.
               </p>
               <p className="mt-5 text-lg leading-8 text-mist">
-                My portfolio covers secure web platforms, internship management workflows, AI/ML prediction systems, Unity simulations, and product-style websites. The common thread is practical software: systems that can be explained, extended, tested, and shipped.
+                My portfolio covers secure web platforms, internship management workflows, AI/ML prediction systems, Unity simulations, gameplay prototypes, visual systems, and product-style websites. The common thread is practical software: systems that can be explained, extended, tested, and shipped.
               </p>
               <div className="mt-8 grid gap-3">
                 {[
                   "REST APIs, JWT authentication, role-based access, and relational database design",
                   "React and Next.js interfaces with accessible, responsive product UX",
                   "Python AI/ML workflows with validation and usable prediction interfaces",
-                  "Unity interactive systems that combine state, UI, simulation, and API integration"
+                  "Unity game and interactive systems that combine state, UI, gameplay logic, simulation, VFX, and API integration"
                 ].map((item) => (
                   <div key={item} className="flex gap-3 text-mist">
                     <CheckCircle2 className="mt-1 shrink-0 text-signal" size={18} />

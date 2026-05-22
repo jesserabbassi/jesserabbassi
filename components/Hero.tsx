@@ -24,13 +24,14 @@ export function Hero() {
             Available for freelance projects
           </div>
 
-          <p className="eyebrow">Full-stack & interactive systems engineer</p>
+          <p className="eyebrow">Full-Stack & Game Developer</p>
           <h1 className="mt-4 max-w-5xl font-display text-4xl font-semibold leading-[1.04] text-ivory md:text-6xl">
             I build product-grade platforms with secure systems and polished UX.
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-8 text-mist md:text-lg">
-            I help teams turn complex ideas into fast, maintainable web products using ASP.NET Core,
-            React, PostgreSQL, Docker, AI integrations, and interaction design that feels premium.
+            I help teams turn complex ideas into fast, maintainable web products and interactive
+            experiences using ASP.NET Core, React, PostgreSQL, Docker, AI integrations, Unity, and
+            gameplay-aware interaction design.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">

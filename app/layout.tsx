@@ -19,26 +19,29 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://jesserabbassi.github.io"),
   title: {
-    default: "Jesser Abbassi | Full-Stack Engineer",
+    default: "Jesser Abbassi | Full-Stack & Game Developer",
     template: "%s | Jesser Abbassi"
   },
   description:
-    "Senior-level portfolio for Jesser Abbassi, a full-stack engineer focused on secure platforms, AI-assisted products, and interactive systems.",
+    "Senior-level portfolio for Jesser Abbassi, a full-stack and game developer focused on secure platforms, AI-assisted products, Unity systems, and interactive experiences.",
   authors: [{ name: profile.name }],
   keywords: [
     "Jesser Abbassi",
-    "Full-stack engineer",
+    "Full-stack & Game Engineer",
     "Next.js",
     "ASP.NET Core",
     "React",
     "PostgreSQL",
     "Docker",
     "AI",
-    "Unity"
+    "Unity",
+    "Game Development",
+    "VFX Graph",
+    "State Machines"
   ],
   openGraph: {
-    title: "Jesser Abbassi | Full-Stack Engineer",
-    description: "Secure web platforms, AI-assisted products, and interactive systems.",
+    title: "Jesser Abbassi | Full-Stack & Game Developer",
+    description: "Secure web platforms, AI-assisted products, Unity systems, and interactive experiences.",
     type: "website",
     images: [{ url: "/images/kawi-niveau.png", width: 1200, height: 760, alt: "Jesser Abbassi portfolio preview" }]
   },
