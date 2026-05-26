@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **devops, cloud**
 
-- 👨‍💻 All of my projects are available at [https://jesserabbassi.github.io/jesserabbassi/](https://jesserabbassi.github.io/jesserabbassi/)
+- 👨‍💻 All of my projects are available at [https://jesserabbassi.github.io/jesserabbassi/](https://jesserabbassi.vercel.app)
 
 - 💬 Ask me about **react, python, ml, c#, Asp.Net, unity**
 
