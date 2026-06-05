@@ -54,7 +54,7 @@ export const profile = {
   github: "https://github.com/jesserabbassi",
   linkedin: "https://www.linkedin.com/in/jesser-abbassi-753203389/",
   whatsapp: "https://wa.me/+21656098980",
-  cv: "/Jesser_Abbassi_CV.pdf",
+  cv: "/Jesser_Abbassi_CV_Full.pdf",
   portrait: "/images/jesser-abbassi.jpg"
 };
 
