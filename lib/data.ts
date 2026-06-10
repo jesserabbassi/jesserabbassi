@@ -353,7 +353,7 @@ export const projects: Project[] = [
       "Responsive navigation and contact structure",
       "Visual system tuned for a design audience"
     ],
-    links: [{ label: "View portfolio", href: "https://hmaied-mariem.vercel.app/", external: true }]
+    links: [{ label: "View portfolio", href: "https://hmaiedmariem.onrender.com", external: true }]
   },
   {
     slug: "reservation-system",
